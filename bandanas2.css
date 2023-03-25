@@ -1,0 +1,279 @@
+  /* montserrat-regular - latin */
+  @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-display: fallback;
+      /* permite visualizar el contenido con fuente alternativa si aun no se ha cargado */
+      src: url('./recursos/montserrat-v18-latin-regular.eot');
+      /* IE9 Compat Modes */
+      src: local(''),
+          url('./recursos/montserrat-v18-latin-regular.eot?#iefix') format('embedded-opentype'),
+          /* IE6-IE8 */
+          url('./recursos/montserrat-v18-latin-regular.woff2') format('woff2'),
+          /* Super Modern Browsers */
+          url('./recursos/montserrat-v18-latin-regular.woff') format('woff'),
+          /* Modern Browsers */
+          url('./recursos/montserrat-v18-latin-regular.ttf') format('truetype'),
+          /* Safari, Android, iOS */
+          url('./recursos/montserrat-v18-latin-regular.svg#Montserrat') format('svg');
+      /* Legacy iOS */
+  }
+
+  /* exo-2-500 - latin */
+  @font-face {
+      font-family: 'Exo 2';
+      font-style: normal;
+      font-weight: 500;
+      font-display: fallback;
+      /* permite visualizar el contenido con fuente alternativa si aun no se ha cargado */
+      src: url('./recursos/exo-2-v10-latin-500.eot');
+      /* IE9 Compat Modes */
+      src: local(''),
+          url('./recursos/exo-2-v10-latin-500.eot?#iefix') format('embedded-opentype'),
+          /* IE6-IE8 */
+          url('./recursos/exo-2-v10-latin-500.woff2') format('woff2'),
+          /* Super Modern Browsers */
+          url('./recursos/exo-2-v10-latin-500.woff') format('woff'),
+          /* Modern Browsers */
+          url('./recursos/exo-2-v10-latin-500.ttf') format('truetype'),
+          /* Safari, Android, iOS */
+          url('./recursos/exo-2-v10-latin-500.svg#Exo2') format('svg');
+      /* Legacy iOS */
+  }
+
+  :root {
+      font-size: calc(10px + 1vw);
+      /* ajuste de tamaño de fuente responsive */
+  }
+
+
+  * {
+      /* facilita el calculo responsive para TODOS los elementos de la página; */
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+  }
+
+  body,
+  html {
+      overflow: hidden;
+  }
+
+  /* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+      font-size: 180%;
+      height: 500px;
+      /* fallback for older browsers */
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-perspective: 300px;
+      perspective: 300px;
+      -webkit-perspective-origin-x: 100%;
+      perspective-origin-x: 100%;
+  }
+
+  .parallax__group {
+      position: relative;
+      height: 500px;
+      /* fallback for older browsers */
+      height: 100vh;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform-origin-x: 100%;
+      transform-origin-x: 100%;
+  }
+
+  .parallax__layer--fore {
+      -webkit-transform: translateZ(0) scale(.6);
+      transform: translateZ(0) scale(.6);
+      z-index: 1;
+      background-color: transparent;
+  }
+
+  .parallax__layer--fore>p {
+
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+
+
+  .parallax__layer--base {
+      -webkit-transform: translateZ(-100px) scale(1.4);
+      transform: translateZ(-100px) scale(1.4);
+      z-index: 4;
+      background-color: transparent;
+  }
+
+  .parallax__layer--back {
+      -webkit-transform: translateZ(-250px) scale(2);
+      transform: translateZ(-250px) scale(2);
+      z-index: 3;
+      background-color: transparent;
+  }
+
+  .parallax__layer--deep {
+      -webkit-transform: translateZ(-400px) scale(3);
+      transform: translateZ(-400px) scale(3);
+      z-index: 2;
+      background-color: transparent;
+  }
+
+
+
+  p {
+      font-family: 'Montserrat', Arial;
+      font-size: 1.5rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+      font-family: 'Exo 2', sans-serif;
+  }
+
+  h1 {
+      font-size: 2.25rem;
+  }
+
+  h2 {
+      font-size: 1.75rem;
+  }
+
+  h3 {
+      font-size: 1.65rem;
+  }
+
+  /* centre the content in the parallax layers */
+  .title {
+      text-align: left;
+      color: darkblue;
+      text-shadow: 2px 2px 1px lightgoldenrodyellow;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+  }
+
+  .desc {
+      text-align: center;
+      color: black;
+      text-shadow: 2px 2px 1px white;
+      border-radius: 5%;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+
+  .imagen {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      transform: translateZ(-250px) scale(3);
+  }
+
+  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  mark {
+      background-color: transparent;
+      color: gray;
+      text-shadow: 2px 2px 1px yellow;
+  }
+
+  #group1 {
+      z-index: 50;
+      /* slide over group 2 */
+  }
+
+  #group1 .parallax__layer--base {
+      z-index: 51;
+  }
+
+  #group2 {
+      z-index: 30;
+      /* slide under groups 1 and 3 */
+  }
+
+  #group2 .parallax__layer--base {
+      z-index: 31;
+  }
+
+  #group3 {
+      z-index: 40;
+      /* slide over group 2 and 4 */
+  }
+
+  #group3 .parallax__layer--base {
+      z-index: 41;
+  }
+
+  #group4 {
+      z-index: 20;
+      /* slide under group 3 and 5 */
+  }
+
+  #group4 .parallax__layer--base {
+      z-index: 21;
+  }
+
+  #group5 {
+      z-index: 25;
+      /* slide over group 4 and 6 */
+  }
+
+  #group5 .parallax__layer--base {
+      z-index: 26;
+  }
+
+  #group6 {
+      z-index: 15;
+      /* slide under group 5 and 7 */
+  }
+
+  #group6 .parallax__layer--base {
+      z-index: 16;
+  }
+
+  #group7 {
+      z-index: 22;
+      /* slide over group 7 */
+  }
+
+  #group7 .parallax__layer--base {
+      z-index: 23;
+  }
+
+  .shop__info {
+      position: absolute;
+      z-index: 100;
+      bottom: 1vh;
+      top: auto;
+      font-size: 80%;
+      text-align: center;
+      width: 100%;
+  }

@@ -1,0 +1,55 @@
+/*Estilos generales*/
+/*Por lo general tendras estos estilos en tu proyecto*/
+html,
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+/*Estilos parallax*/
+.container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+  
+
+}
+
+section {
+  background-size: cover;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-bg{
+  background-position: center center;
+  transform: translateZ(-0.5px) scale(2);
+  background-size: cover;
+  z-index: -1;
+  height: 50vh;
+}
+.parallax-content{
+  z-index: -1;
+  transform: translateY(-25vh) translateZ(0px) scale(1);
+  padding-left:30px;
+  padding-right:30px;
+  text-align:center;
+}
+.no-parallax-section{
+  height: 50vh;
+}
+.no-parallax-content{
+  text-align:center;
+  padding:30px;
+}
+/*Colores de fondo*/
+.bg-1{
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(234,38,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+.bg-2{
+  background:linear-gradient(90deg, rgba(0,83,33,1) 0%, rgba(215,198,1,1) 100%);
+}

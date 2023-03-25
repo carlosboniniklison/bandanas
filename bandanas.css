@@ -1,0 +1,267 @@
+/*
+ Coastcolors
+ autor: Carlos Boni
+ HomePage tipo landing con efecto parallax
+ 24 de marzo de 2023
+*/
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 16px/1.8 "Lato", sans-serif;
+    color: black;
+    background-color:black;
+}
+
+.bgimg {
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-multifuncion-para-todos.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg");
+    min-height: 400px;
+}
+
+.bgimg-5 {
+    background-image: url("https://coastcolors.es/images/fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg");
+    min-height: 400px;
+}
+
+.bgimg-6 {
+    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-para-cabello-coloridas.jpg");
+    min-height: 400px;
+}
+
+.bgimg-7 {
+    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-multiuso-mayorista.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+
+.box {
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom:1%;
+    max-width: 60%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.box:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid yellow;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+}
+
+mark {
+    background-color:transparent;
+    font-weight:900;
+    color:magenta;
+}
+.sparkle {
+    max-width: 50%;
+    color: #441151;
+    margin: auto auto;
+  }
+  .sparkle:hover {
+    /* cursor: pointer; */    
+    transition: transform 900ms;
+  }
+  
+  .u-hover--sparkle {
+    box-sizing: border-box;
+    position: relative;
+    padding: 0.75em;
+  }
+  .u-hover--sparkle::before, .u-hover--sparkle::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+  }
+  .u-hover--sparkle::before {
+    border-top: 0.2em solid #9F2042;
+    border-bottom: 0.2em solid #9F2042;
+    transform: scale3d(0, 1, 1);
+  }
+  .u-hover--sparkle::after {
+    border-left: 0.2em solid #9F2042;
+    border-right: 0.2em solid #9F2042;
+    transform: scale3d(1, 0, 1);
+  }
+  .u-hover--sparkle:hover::before, .u-hover--sparkle:hover::after {
+    transform: scale3d(1, 1, 1);    
+    transition: transform 900ms;
+  }
+  
+@keyframes example {
+    0% {
+        border-left: 2px solid #ffffff;
+    }
+
+    25% {
+        border-left: 3px solid #ffe6e6;
+    }
+
+    50% {
+        border-left: 4px solid #ff8080;
+    }
+
+    100% {
+        border-left: 5px solid #ff0000;
+    }
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.btn-hover.color-10 {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.btn-hover.color-11 {
+       background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg {
+        background-attachment: scroll;
+    }
+}
