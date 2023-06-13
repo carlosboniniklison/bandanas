@@ -11,7 +11,7 @@ html {
     margin: 0;
     font: 400 16px/1.8 "Lato", sans-serif;
     color: black;
-    background-color:black;
+    background-color:white;
 }
 
 .bgimg {
@@ -69,12 +69,34 @@ html {
 }
 
 .caption span.border {
-    background-color: #111;
+    /* background-color: rgba(0,0,0,0.5); */
     color: #fff;
-    padding: 18px;
-    font-size: 25px;
+    padding: 9px;
+    font-size: 2em;
     letter-spacing: 10px;
 }
+
+.border {
+  background-color: rgba(0,255,0,0.2);
+  text-shadow: 2px 2px 4px black;
+}
+
+.border span:nth-of-type(2n+1) {
+    color: yellow;
+  }
+
+  .border span:nth-of-type(3n+1) {
+    color: red;
+  }
+
+  .border span:nth-of-type(4n+1) {
+    color: lime;
+  }
+
+  
+  .border span:nth-of-type(5n+1) {
+    color: blueviolet;
+  }
 
 h3 {
     letter-spacing: 5px;
@@ -86,14 +108,14 @@ h3 {
 
 .box {
     color: black;
-    background-color: white;
+    background-color: transparent;
     text-align: center;
     padding: 50px 80px;
     margin: auto;
     margin-top: 1%;
     margin-bottom:1%;
     max-width: 60%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
@@ -101,9 +123,9 @@ h3 {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     animation-name: example;
-    animation-duration: 0.25s;
-    border-left: 8px solid yellow;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 h1 {
@@ -161,19 +183,28 @@ mark {
   
 @keyframes example {
     0% {
-        border-left: 2px solid #ffffff;
+        border-left: 8px solid whitesmoke;
+        box-shadow: 0 14px 28px rgba(255, 0, 0, 1), 0 10px 10px rgba(255, 0, 0, 0.90);
     }
 
     25% {
-        border-left: 3px solid #ffe6e6;
+        border-left: 7px solid whitesmoke;
+        box-shadow: 0 12px 24px rgba(180, 0, 0, 0.8), 0 10px 10px rgba(180, 0, 0, 0.72);
     }
 
     50% {
-        border-left: 4px solid #ff8080;
+        border-left: 6px solid whitesmoke;
+        box-shadow: 0 10px 20px rgba(120, 0, 0, 0.6), 0 10px 10px rgba(120, 0, 0, 0.54);
+    }
+
+    75% {
+        border-left: 5px solid whitesmoke;
+        box-shadow: 0 8px 16px rgba(60, 0, 0, 0.4), 0 10px 10px rgba(60, 0, 0, 0.36);
     }
 
     100% {
-        border-left: 5px solid #ff0000;
+        border-left: 4px solid whitesmoke;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.18);
     }
 }
 
