@@ -14,14 +14,16 @@ html {
     background-color:white;
 }
 
+* {
+    box-sizing: border-box;
+}
 .bgimg {
     position: relative;
-    opacity: 0.85;
+    opacity: 0.90;
     background-attachment: fixed;
-    background-position: center 25%;
+    background-position: 50% 20%;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .bgimg-1 {
@@ -37,16 +39,19 @@ html {
 .bgimg-3 {
     background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg");
     min-height: 400px;
+    background-position: 50% 35%;
 }
 
 .bgimg-4 {
     background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg");
     min-height: 400px;
+    background-position: 50% 50%;
 }
 
 .bgimg-5 {
     background-image: url("https://coastcolors.es/images/fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg");
     min-height: 400px;
+    background-position: 50% 0%;
 }
 
 .bgimg-6 {
@@ -57,23 +62,24 @@ html {
 .bgimg-7 {
     background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-multiuso-mayorista.jpg");
     min-height: 100%;
+    background-position: 50% 0%;
 }
 
 .caption {
     position: absolute;
     left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
+    top: 5%;
+    width: 95%;
+    margin-left:5%;
+    text-align: left;
     color: #000;
 }
 
 .caption span.border {
-    /* background-color: rgba(0,0,0,0.5); */
     color: #fff;
-    padding: 9px;
-    font-size: 2em;
-    letter-spacing: 10px;
+    padding: 0.2em;
+    font-size: calc(0.5em + 5vw);
+    letter-spacing: calc(0.04em + 0.6vw);
 }
 
 .border {
@@ -81,21 +87,20 @@ html {
   text-shadow: 2px 2px 4px black;
 }
 
-.border span:nth-of-type(2n+1) {
-    color: yellow;
+.border span:nth-of-type(2n+1) {    
+    color:#04befe
   }
 
   .border span:nth-of-type(3n+1) {
-    color: red;
+    color:orangered;
   }
 
   .border span:nth-of-type(4n+1) {
     color: lime;
   }
-
   
   .border span:nth-of-type(5n+1) {
-    color: blueviolet;
+    color: yellow;
   }
 
 h3 {
@@ -110,11 +115,12 @@ h3 {
     color: black;
     background-color: transparent;
     text-align: center;
-    padding: 50px 80px;
+    padding: 30px 50px;
     margin: auto;
     margin-top: 1%;
     margin-bottom:1%;
-    max-width: 60%;
+    width: 60%;
+    min-width:400px;
     /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
@@ -143,6 +149,7 @@ mark {
 }
 .sparkle {
     max-width: 50%;
+    min-width:300px;
     color: #441151;
     margin: auto auto;
   }
