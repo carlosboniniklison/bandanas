@@ -14,20 +14,20 @@
     en lugar de la linea anterior*/
     $auth = "PLAIN";
     $socket_options = array('ssl' => array('verify_peer_name' => false));
-    $username = "web@nutecfor.es";
-    $password = "SoyLaWebDeNutec4";
+    $username = "web@coastcolors.es";
+    $password = ";r11(El9[?f9";
     $smtpinfo = array ('host' => $host, 'port' => $port, 'auth' => $auth, 'socket_options' => $socket_options, 'username' => $username, 'password' => $password);
 
     // destinatario
-    $recipiente = "info@nutecfor.es";
+    $recipiente = "formularioweb@coastcolors.es";
 
     // parametros HEADER
     $email_from = $_POST["remite"].' <'.$_POST["email"].'>';
-    $email_to = "Agente Digitalizador Nutecfor <info@nutecfor.es>";
-    $email_subject = "Contacto Web por Agente Digitalizador" ;
+    $email_to = "Bandanas CoastColors <formularioweb@coastcolors.es>";
+    $email_subject = "Pedido de Información comercial - bandanas" ;
     $email_reply = $_POST["email"];
     $email_cc = $_POST["email"];
-    $email_bcc = "carlosboni.niklison@gmail.com";
+    $email_bcc = "soporte@axartec.com";
     $headers = array ('From' => $email_from, 'To' => $email_to, 'Subject' => $email_subject, 'Cc' => $email_cc, 'Bcc' => $email_bcc, 'Reply-To' => $email_reply);
     
     // cuerpo del mensaje
@@ -45,7 +45,7 @@
        echo "<script>alert('Mensaje Enviado');</script>";
     };
 
-    header("refresh: 1; url = https:html/index.html");
+    header("refresh: 1; url = https:/index.html");
     exit;
     
     ?>
