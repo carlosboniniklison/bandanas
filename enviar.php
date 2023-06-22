@@ -14,8 +14,8 @@
     en lugar de la linea anterior*/
     $auth = "PLAIN";
     $socket_options = array('ssl' => array('verify_peer_name' => false));
-    $username = "web@coastcolors.es";
-    $password = ";r11(El9[?f9";
+    $username = "";
+    $password = "";
     $smtpinfo = array ('host' => $host, 'port' => $port, 'auth' => $auth, 'socket_options' => $socket_options, 'username' => $username, 'password' => $password);
 
     // destinatario
