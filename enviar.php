@@ -45,7 +45,7 @@
        echo "<script>alert('Mensaje Enviado');</script>";
     };
 
-    header("refresh: 1; url = https:/index.html");
+    header("refresh: 1; url = ./index.html");
     exit;
     
     ?>
