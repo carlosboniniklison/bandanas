@@ -6,7 +6,7 @@
     
     require_once "Mail.php";
     
-    // parametros SMTP
+    // parametros SMTP - repasar puerto según Raiola y captcha
     $host = "localhost";
     $port = "25";
     /* $auth = true;
