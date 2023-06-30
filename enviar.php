@@ -2,7 +2,7 @@
     <?php
     
     error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED ^ E_STRICT);
-    ini_set("include_path", '/home/trrgrjgc/php:' . ini_get("include_path") );
+    ini_set("include_path", '/home/qsxgxtsm/php:' . ini_get("include_path") );
     
     require_once "Mail.php";
     
@@ -14,8 +14,8 @@
     en lugar de la linea anterior*/
     $auth = "PLAIN";
     $socket_options = array('ssl' => array('verify_peer_name' => false));
-    $username = "web@coastcolors.es";
-    $password = ";r11(El9[?f9";
+    $username = "desdelaweb@coastcolors.es";
+    $password = "hy2Mr75!z78Y";
     $smtpinfo = array ('host' => $host, 'port' => $port, 'auth' => $auth, 'socket_options' => $socket_options, 'username' => $username, 'password' => $password);
 
     // destinatario
@@ -27,7 +27,7 @@
     $email_subject = "Pedido de Información comercial - bandanas" ;
     $email_reply = $_POST["email"];
     $email_cc = $_POST["email"];
-    $email_bcc = "soporte@axartec.com";
+    $email_bcc = "cboni@axartec.com";
     $headers = array ('From' => $email_from, 'To' => $email_to, 'Subject' => $email_subject, 'Cc' => $email_cc, 'Bcc' => $email_bcc, 'Reply-To' => $email_reply);
     
     // cuerpo del mensaje
