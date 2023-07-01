@@ -2,11 +2,7 @@
     <?php
     
     error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED ^ E_STRICT);
-    // ini_set("include_path", '/home/qsxgxtsm/php:' . ini_get("include_path") );
-    
-set_include_path(get_include_path() . PATH_SEPARATOR . '/home/qsxgxtsm/php:' . PATH_SEPARATOR . '/usr/share/pear:' . PATH_SEPARATOR . '/opt/alt/php81/usr/share/php:' . PATH_SEPARATOR . '/opt/alt/php81/usr/share/pear:');
-
-
+    ini_set("include_path", '/home/qsxgxtsm/php:' . ini_get("include_path") );
     
     require_once "Mail.php";
     
@@ -31,7 +27,7 @@ set_include_path(get_include_path() . PATH_SEPARATOR . '/home/qsxgxtsm/php:' . P
     $email_subject = "Pedido de Información comercial - bandanas" ;
     $email_reply = $_POST["email"];
     $email_cc = $_POST["email"];
-    $email_bcc = "soporte@axartec.com";
+    $email_bcc = "cboni@axartec.com";
     $headers = array ('From' => $email_from, 'To' => $email_to, 'Subject' => $email_subject, 'Cc' => $email_cc, 'Bcc' => $email_bcc, 'Reply-To' => $email_reply);
     
     // cuerpo del mensaje
