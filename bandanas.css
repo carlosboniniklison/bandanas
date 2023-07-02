@@ -2,7 +2,7 @@
  Coastcolors
  autor: Carlos Boni
  HomePage tipo landing con efecto parallax
- 24 de marzo de 2023
+ actualizado el 1 de julio de 2023
 */
 
 body,
@@ -27,40 +27,40 @@ html {
 }
 
 .bgimg-1 {
-    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg");
+    background-image: url("./fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg");
     min-height: 100%;
 }
 
 .bgimg-2 {
-    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-multifuncion-para-todos.jpg");
+    background-image: url("./fotos-bandanas/Bandanas-multifuncion-para-todos.jpg");
     min-height: 400px;
 }
 
 .bgimg-3 {
-    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg");
+    background-image: url("./fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg");
     min-height: 400px;
     background-position: 50% 35%;
 }
 
 .bgimg-4 {
-    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg");
+    background-image: url("./fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg");
     min-height: 400px;
     background-position: 50% 50%;
 }
 
 .bgimg-5 {
-    background-image: url("https://coastcolors.es/images/fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg");
+    background-image: url("./fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg");
     min-height: 400px;
     background-position: 50% 0%;
 }
 
 .bgimg-6 {
-    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-para-cabello-coloridas.jpg");
+    background-image: url("./fotos-bandanas/Bandanas-para-cabello-coloridas.jpg");
     min-height: 400px;
 }
 
 .bgimg-7 {
-    background-image: url("https://coastcolors.es/images/fotos-bandanas/Bandanas-multiuso-mayorista.jpg");
+    background-image: url("./fotos-bandanas/Bandanas-multiuso-mayorista.jpg");
     min-height: 100%;
     background-position: 50% 0%;
 }
@@ -233,7 +233,7 @@ mark {
     background-size: 300% 100%;
 
     border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -241,7 +241,7 @@ mark {
 
 .btn-hover:hover {
     background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;

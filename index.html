@@ -2,24 +2,31 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="ponchos,pareos,sarongs,caftanes,ibicencos,vestidos,pantalones,foutas,futah,verano,playa" />
-	<meta name="title" content="Ponchos de verano al por mayor. La Vilaine mayorista." />
-	<meta name="metatitle" content="Ponchos de verano al por mayor. La Vilaine mayorista." />
-	<meta name="twitter:title" content="Ponchos de verano al por mayor. La Vilaine mayorista." />
-	<meta name="twitter:description" content="Fabricamos e importamos diseños únicos de ponchos de verano de 1ª Calidad. Ofrecemos zonas exclusivas a tiendas en España. La Vilaine mayorista." />
-	<meta name="twitter:image" content="https://ponchospareosyvestidosdeplaya-lavilaine.es/images/ponchos/ponchosdeplaya-lavilaine-08.jpg" />
-	<meta property="og:title" content="Ponchos de verano al por mayor. La Vilaine mayorista." />
-	<meta property="og:description" content="Fabricamos e importamos diseños únicos de ponchos de verano de 1ª Calidad. Ofrecemos zonas exclusivas a tiendas en España. La Vilaine mayorista." />
-	<meta property="og:url" content="https://ponchospareosyvestidosdeplaya-lavilaine.es/ponchos" />
-	<meta property="og:type" content="article" />
-	<meta property="og:image" content="https://ponchospareosyvestidosdeplaya-lavilaine.es/images/ponchos/ponchosdeplaya-lavilaine-08.jpg" />
-	<meta name="description" content="Fabricamos e importamos diseños únicos de ponchos de verano de 1ª Calidad. Ofrecemos zonas exclusivas a tiendas en España. La Vilaine mayorista." />
-	<meta name="generator" content="Joomla! - Open Source Content Management" />
-    <title>Bandanas Multifunción - Coastcolors Mayorista en Málaga</title>
+    <meta name="title" content="Bandanas Multifunción - Coastcolors Mayorista." />
+    <meta name="metatitle" content="Bandanas Multifunción - Coastcolors Mayorista." />
+    <meta name="twitter:title" content="Bandanas Multifunción - Coastcolors Mayorista." />
+    <meta name="twitter:description"
+        content="Bandanas, pañuelos multifunción o bragas de cuello. Distínguete con estas prendas cómodas, divertidas, atractivas y coloridas, útiles como complemento o para practicar deporte o disfrutar del aire libre. Coastcolors importador y mayorista." />
+    <meta name="twitter:image" content="https://coastcolors.es/fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg" />
+    <meta property="og:title" content="Bandanas Multifunción - Coastcolors Mayorista" />
+    <meta property="og:description"
+        content="Bandanas, pañuelos multifunción o bragas de cuello. Distínguete con estas prendas cómodas, divertidas, atractivas y coloridas, útiles como complemento o para practicar deporte o disfrutar del aire libre. Coastcolors importador y mayorista." />
+    <meta property="og:url" content="https://coastcolors.es" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://coastcolors.es/fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg" />
+    <meta name="description"
+        content="Bandanas, pañuelos multifunción o bragas de cuello. Distínguete con estas prendas cómodas, divertidas, atractivas y coloridas, útiles como complemento o para practicar deporte o disfrutar del aire libre. Coastcolors importador y mayorista." />
+    <title>Bandanas Multifunción - Coastcolors Mayorista</title>
     <link rel="stylesheet" href="./bandanas.css" />
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6Lfm8OsmAAAAAJWugDCxglwH8PkfUbJX01uUqhZZ"></script>
+
+
+
+
 </head>
 
 <body>
@@ -162,26 +169,23 @@
         <section id="contacto">
 
             <form id="formulario" action="./enviar.php" method="post">
-                <div >
-                    <input name="remite" type="text" class="form-control" placeholder="Nombre y Apellidos">
+                <div>
+                    <input name="remite" type="text" class="form-control" placeholder="Nombre y Apellidos" />
                 </div>
-                <div >
-                    <input name="email" type="email" class="form-control" placeholder="Email">
+                <div>
+                    <input name="email" type="email" class="form-control" placeholder="Email" />
                 </div>
-                <div >
+                <div>
                     <textarea name="msg" cols="45" rows="5" id="msg" class="form-control"
                         placeholder="Empresa y breve descripción"></textarea>
                 </div>
-                <input name="SubmitBtn" type="submit" id="SubmitBtn" value="Enviar Mensaje"
-                    class="btn-hover color-10"
-                    data-sitekey="6LfOxHYeAAAAAAoHpVZj8L-IDofEfQBcvx736uzm" data-callback='onSubmit'>
-            </form>
+                <button class="g-recaptcha btn-hover color-10" data-sitekey="6Lfm8OsmAAAAAJWugDCxglwH8PkfUbJX01uUqhZZ"
+                    data-callback="onSubmit" data-action="submit">ENVIAR</button>
+
+<!--                 <input name="SubmitBtn" type="submit" id="SubmitBtn" value="Enviar Mensaje" class="btn-hover color-10"
+                    data-sitekey="6Lfm8OsmAAAAAJWugDCxglwH8PkfUbJX01uUqhZZ" data-callback="onSubmit" />
+ -->            </form>
         </section>
-
-
-
-
-
 
 
 
@@ -209,9 +213,12 @@
             <script>document.write(/\d{4}/.exec(Date())[0])</script>
         </p>
     </footer>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("formulario").submit();
+        }
+    </script>
 
-
-    <!-- https://www.sliderrevolution.com/resources/css-hover-effects/ -->
 </body>
 
 
