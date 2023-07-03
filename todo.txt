@@ -1,0 +1,3 @@
+bajar bandanas para que no se tapen en movil
+restaurar el formulario (al poner el div se fastidió)
+poner textos cambiados que me mandará Christophe
