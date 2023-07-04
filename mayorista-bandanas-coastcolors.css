@@ -312,6 +312,7 @@ mark {
 #zonacontacto > label.caption.btn-hover.color-8 > img {
     width:5vw;
     max-width:100px;
+    min-width:30px;
     height:auto;
     animation: latidos 1.5s infinite;
 	
