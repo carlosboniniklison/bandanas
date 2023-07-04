@@ -1,0 +1,472 @@
+/*
+ Coastcolors
+ autor: Carlos Boni
+ HomePage tipo landing con efecto parallax
+ actualizado el 1 de julio de 2023
+*/
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 16px/1.8 "Lato", sans-serif;
+    color: black;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bgimg {
+    position: relative;
+    opacity: 0.90;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 75vh;
+    width: 100%;
+
+}
+
+.bgimg-1 {
+    background-image: url("./fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg");
+    min-height: 100vh;
+    background-position: 65% 0vh;
+}
+
+.bgimg-2 {
+    background-image: url("./fotos-bandanas/Bandanas-multifuncion-para-todos.jpg");
+    background-position: 70% 18vh;
+}
+
+.bgimg-3 {
+    background-image: url("./fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg");
+    background-position: 50% -30vh;
+}
+
+.bgimg-4 {
+    background-image: url("./fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg");
+    background-position: 60% -45vh;
+}
+
+.bgimg-5 {
+    background-image: url("./fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg");
+    background-position: 35% 10vh;
+}
+
+.bgimg-6 {
+    background-image: url("./fotos-bandanas/Bandanas-para-cabello-coloridas.jpg");
+    background-position: 10% -5vh;
+}
+
+.bgimg-7 {
+    background-image: url("./fotos-bandanas/Bandanas-multiuso-mayorista.jpg");
+    background-position: 30% 20vh;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 95%;
+    margin-left: 5%;
+    text-align: left;
+    color: #000;
+}
+
+.caption span.border {
+    color: #fff;
+    padding: 0.2em;
+    font-size: calc(0.5em + 5vw);
+    letter-spacing: calc(0.04em + 0.6vw);
+}
+
+.border {
+    background-color: rgba(0, 255, 0, 0.2);
+    text-shadow: 2px 2px 4px black;
+}
+
+.border span:nth-of-type(2n+1) {
+    color: #04befe
+}
+
+.border span:nth-of-type(3n+1) {
+    color: orangered;
+}
+
+.border span:nth-of-type(4n+1) {
+    color: lime;
+}
+
+.border span:nth-of-type(5n+1) {
+    color: yellow;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+
+.box {
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 60%;
+    min-width: 400px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.box:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+}
+
+mark {
+    background-color: transparent;
+    font-weight: 900;
+    color: magenta;
+}
+
+.sparkle {
+    max-width: 50%;
+    min-width: 300px;
+    color: #441151;
+    margin: auto auto;
+}
+
+.sparkle:hover {
+    /* cursor: pointer; */
+    transition: transform 900ms;
+}
+
+.u-hover--sparkle {
+    box-sizing: border-box;
+    position: relative;
+    padding: 0.75em;
+}
+
+.u-hover--sparkle::before,
+.u-hover--sparkle::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform-origin: center;
+}
+
+.u-hover--sparkle::before {
+    border-top: 0.2em solid #9F2042;
+    border-bottom: 0.2em solid #9F2042;
+    transform: scale3d(0, 1, 1);
+}
+
+.u-hover--sparkle::after {
+    border-left: 0.2em solid #9F2042;
+    border-right: 0.2em solid #9F2042;
+    transform: scale3d(1, 0, 1);
+}
+
+.u-hover--sparkle:hover::before,
+.u-hover--sparkle:hover::after {
+    transform: scale3d(1, 1, 1);
+    transition: transform 900ms;
+}
+
+@keyframes example {
+    0% {
+        border-left: 8px solid whitesmoke;
+        box-shadow: 0 14px 28px rgba(255, 0, 0, 1), 0 10px 10px rgba(255, 0, 0, 0.90);
+    }
+
+    25% {
+        border-left: 7px solid whitesmoke;
+        box-shadow: 0 12px 24px rgba(180, 0, 0, 0.8), 0 10px 10px rgba(180, 0, 0, 0.72);
+    }
+
+    50% {
+        border-left: 6px solid whitesmoke;
+        box-shadow: 0 10px 20px rgba(120, 0, 0, 0.6), 0 10px 10px rgba(120, 0, 0, 0.54);
+    }
+
+    75% {
+        border-left: 5px solid whitesmoke;
+        box-shadow: 0 8px 16px rgba(60, 0, 0, 0.4), 0 10px 10px rgba(60, 0, 0, 0.36);
+    }
+
+    100% {
+        border-left: 4px solid whitesmoke;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.18);
+    }
+}
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.2); }
+    to { transform: none; }
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.btn-hover.color-8 {
+    /* background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376); */
+    background-color: whitesmoke;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: lightgray 6px 6px 3px;    
+}
+
+#zonacontacto > label.caption.btn-hover.color-8 > img {
+    width:5vw;
+    max-width:100px;
+    height:auto;
+    animation: latidos 1.5s infinite;
+	
+}
+
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.btn-hover.color-10 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.btn-hover.color-11 {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+    box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+#contacto {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 1s;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+}
+
+#mostrar-modal {
+    display: none;
+}
+
+#mostrar-modal+label {
+    
+    display: table;
+    margin: auto;
+    width:20%;
+    color: #fff;
+    line-height: 1;
+    padding: 2em 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#mostrar-modal+label:hover {
+    background: magenta;
+}
+
+#mostrar-modal:checked~#contacto {
+    top: 0;
+}
+
+#cerrar-modal {
+    display: none;
+}
+
+#cerrar-modal+label {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: tomato;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+#cerrar-modal:checked~#contacto {
+    top: -100vh;
+}
+
+#cerrar-modal+label {
+    display: none;
+}
+
+#mostrar-modal:checked~#cerrar-modal+label {
+    display: block;
+}
+
+#cerrar-modal:checked+label {
+    display: none;
+}
+
+
+/* Ajuste de imagenes y textos para tablets y móviles */
+@media (orientation: portrait) {
+
+    .bgimg-1 {
+        background-image: url("./fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg");
+        min-height: 100vh;
+        background-position: 50% 10vh;
+    }
+
+    .bgimg-2 {
+        background-image: url("./fotos-bandanas/Bandanas-multifuncion-para-todos.jpg");
+        background-size: contain;
+    }
+
+    .bgimg-3 {
+        background-image: url("./fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg");
+        background-position: 50% 0vh;
+    }
+
+    .bgimg-4 {
+        background-image: url("./fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg");
+        background-position: 60% -10vh;
+    }
+
+    .bgimg-5 {
+        background-image: url("./fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg");
+        background-position: 50% 25vh;
+    }
+
+    .bgimg-6 {
+        background-image: url("./fotos-bandanas/Bandanas-para-cabello-coloridas.jpg");
+        background-position: 10% -5vh;
+    }
+
+    .bgimg-7 {
+        background-image: url("./fotos-bandanas/Bandanas-multiuso-mayorista.jpg");
+        background-position: 30% 20vh;
+    }
+
+    .desc {
+        font-size: smaller;
+        line-height: normal;
+    }
+
+
+
+}
