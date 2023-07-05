@@ -428,38 +428,31 @@ mark {
 @media (orientation: portrait) {
 
     .bgimg-1 {
-        background-image: url("./fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg");
         min-height: 100vh;
         background-position: 50% 10vh;
     }
 
     .bgimg-2 {
-        background-image: url("./fotos-bandanas/Bandanas-multifuncion-para-todos.jpg");
         background-size: contain;
     }
 
     .bgimg-3 {
-        background-image: url("./fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg");
         background-position: 50% 0vh;
     }
 
     .bgimg-4 {
-        background-image: url("./fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg");
         background-position: 60% -10vh;
     }
 
     .bgimg-5 {
-        background-image: url("./fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg");
         background-position: 50% 25vh;
     }
 
     .bgimg-6 {
-        background-image: url("./fotos-bandanas/Bandanas-para-cabello-coloridas.jpg");
         background-position: 10% -5vh;
     }
 
     .bgimg-7 {
-        background-image: url("./fotos-bandanas/Bandanas-multiuso-mayorista.jpg");
         background-position: 30% 20vh;
     }
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://coastcolors.es/index.html</loc>
+    <image:image>
+      <image:loc>https://coastcolors.es/bandanas-al-por-mayor.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://coastcolors.es/fotos-bandanas/Bandanas-comodas-al-por-mayor.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://coastcolors.es/fotos-bandanas/Bandanas-multifuncion-para-todos.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://coastcolors.es/fotos-bandanas/Bandanas-coloridas-para-tiendas.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://coastcolors.es/fotos-bandanas/Bandanas-de-cuello-para-comercios.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://coastcolors.es/fotos-bandanas/Mayorista-de-bragas-multifuncion.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://coastcolors.es/fotos-bandanas/Bandanas-para-cabello-coloridas.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://coastcolors.es/fotos-bandanas/Bandanas-multiuso-mayorista.jpg</image:loc>
+    </image:image>
+  </url>
+</urlset>
